@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdatastrato_next=self.webpackChunkdatastrato_next||[]).push([[7139],{61248:t=>{t.exports=JSON.parse('{"permalink":"/blog/tags/company","page":1,"postsPerPage":1000,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

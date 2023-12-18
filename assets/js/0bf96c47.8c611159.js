@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdatastrato_next=self.webpackChunkdatastrato_next||[]).push([[1930],{12596:a=>{a.exports=JSON.parse('{"label":"gravitino","permalink":"/blog/tags/gravitino","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);

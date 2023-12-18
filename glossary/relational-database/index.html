@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="career mdx-page plugin-pages plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.1">
+<title data-rh="true">What Is a Relational Database? | Datastrato</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://datastrato.ai/img/datastrato-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://datastrato.ai/img/datastrato-social-card.jpg"><meta data-rh="true" property="og:url" content="https://datastrato.ai/glossary/relational-database"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="What Is a Relational Database? | Datastrato"><meta data-rh="true" name="description" content="A relational database is a type of database that stores and manages data in a"><meta data-rh="true" property="og:description" content="A relational database is a type of database that stores and manages data in a"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://datastrato.ai/glossary/relational-database"><link data-rh="true" rel="alternate" href="https://datastrato.ai/glossary/relational-database" hreflang="en"><link data-rh="true" rel="alternate" href="https://datastrato.ai/glossary/relational-database" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Datastrato RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Datastrato Atom Feed">
+<link rel="alternate" type="application/json" href="/blog/feed.json" title="Datastrato JSON Feed"><link rel="stylesheet" href="/assets/css/styles.511a7133.css">
+<script src="/assets/js/runtime~main.296e8683.js" defer="defer"></script>
+<script src="/assets/js/main.f723ed98.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_j2j9" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar_WxW1 navbar navbar--fixed-top"><div class="navbar__inner inner_Mh1Q"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo/datastrato-black.png" alt="Logo" class="themedComponent_TzN7 themedComponent--light_mIzh"><img src="/img/logo/datastrato-white.png" alt="Logo" class="themedComponent_TzN7 themedComponent--dark_b7oL"></div><b class="navbar__title text--truncate"> </b></a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Products</a><ul class="dropdown__menu"><li>
+<div class="w-screen max-w-md flex-auto overflow-hidden bg-white dark:bg-[#21222b] text-sm leading-6">
+  <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50 dark:hover:bg-[#293054]">
+    <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+      <image src="/img/logo/gravitino.svg" class="w-6 h-6">
+    </div>
+  <div>
+    <a href="/gravitino" class="text-lg font-semibold text-gray-900 dark:text-white">
+      Gravitino
+      <span class="absolute inset-0"></span>
+    </a>
+    <p class="mt-1 mb-0 text-gray-600 dark:text-gray-300">A high-performance, geo-distributed and federated metadata lake</p>
+  </div>
+</div>
+</div></li></ul></div><a class="navbar__item navbar__link" href="/blog">Blog</a><a class="navbar__item navbar__link" href="/docs/0.3.0/">Documentation</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/datastrato/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link header-github-link" aria-label="GitHub repository">Star us<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_v3ID"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_mQQv colorModeToggle_x44X"><button class="clean-btn toggleButton_ichq toggleButtonDisabled_iobG" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_F93k"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_edoM"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_dCNk"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_eExm"><main class="container container--fluid margin-vert--lg"><div class="row mdxPageWrapper_yHAa"><div class="col col--8"><article><h1>What Is a Relational Database?</h1>
+<p>A relational database is a type of database that stores and manages data in a
+tabular format, using a relational model. Data is organized into a collection of
+tables consisting of rows and columns. Each data point in a relational database
+is written to a row with a unique ID (key) with other attributes corresponding
+to each column. Data is then retrieved via Structured Query Language (SQL),
+which is why relational databases are often called SQL databases.</p>
+<figure><img alt="Diagram showing an example of a relational database with data in the Transaction table mapped to the Product table and the Customer table." class="image_yt7U margin_cHYA shadow_K2GZ title_SOBy" height="342" src="/img/glossary/relational-database/relational-database.webp" width="770" loading="lazy"><figcaption class="caption_iPQj">Example of a relational database: the data in the Transaction table is mapped to the Product table and the Customer table.</figcaption></figure>
+<p>Relational databases are commonly used for scenarios where data can be logically
+mapped to the relational model. Because data is stored in a structured manner,
+relational databases can perform complex queries across tables efficiently.
+Finally, due to their transactional guarantees, relational databases are a great
+choice where data consistency and transactionality are of utmost importance such
+as in e-commerce or banking.</p>
+<h2 class="anchor anchorWithStickyNavbar_vlJa" id="relational-model">Relational model<a href="#relational-model" class="hash-link" aria-label="Direct link to Relational model" title="Direct link to Relational model">​</a></h2>
+<p>The relational database model was first developed by Edgar F. Codd from IBM in
+the 1970s. In this model, data is represented by related logical tables linked
+through attribute relationships. For example, to represent a user’s bank account
+information, we may have a <strong>Transactions</strong> table and an <strong>Accounts</strong> table.</p>
+<p>The transactions table may hold information about each deposit and withdrawal
+such as the source, destination, and amount. Then in the accounts table, we may
+have information about each account such as type (e.g., checking vs. savings)
+and the owner. These two tables may be linked by account ID so that each bank
+user can easily find their transaction information per their account.</p>
+<p>A relational model is an intuitive way to represent data. Due to its simplicity
+and widespread adoption, it has been the foundation for relational database
+systems that are used today.</p>
+<h2 class="anchor anchorWithStickyNavbar_vlJa" id="relational-model-operations">Relational model operations<a href="#relational-model-operations" class="hash-link" aria-label="Direct link to Relational model operations" title="Direct link to Relational model operations">​</a></h2>
+<p>Relational databases surface data via relational model operations. Some
+importation operations include:</p>
+<ul>
+<li><strong>Select</strong>: Select is used to choose specific rows from a table based on a
+condition. It can return all the data when unspecified or filter out a subset
+of the rows.</li>
+<li><strong>Project</strong>: Projection is used to choose specific columns from a table based
+on a condition.</li>
+<li><strong>Join</strong>: Join operation is used to combine rows from two or more tables based
+on related columns.</li>
+<li><strong>Union</strong>: Union combines the result of two or more select operations into a
+single result set.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_vlJa" id="characteristics-of-relational-databases">Characteristics of relational databases<a href="#characteristics-of-relational-databases" class="hash-link" aria-label="Direct link to Characteristics of relational databases" title="Direct link to Characteristics of relational databases">​</a></h2>
+<p>In relational databases, data is typically stored and accessed in a row format.
+In order to avoid full scans when selecting data, relational databases utilize
+indexes to quickly find the relevant rows to return.</p>
+<p>Also, relational databases are often marked by their ACID properties. These
+properties are:</p>
+<ul>
+<li><strong>Atomicity</strong>: Atomicity guarantees that all operations in a transaction
+either succeed or fail. If any part of an atomic transaction fails, then the
+entire transaction is rolled back. Think of a classic banking situation where
+you want to guarantee that when you pay someone, the amount being withdrawn is
+only debited when the recipient successfully can access that amount.</li>
+<li><strong>Consistency</strong>: Consistency ensures that the database remains in a
+consistent, valid state after each transaction. This means that transactions
+should not violate any constraints, triggers, or other rules of the database.
+Going back to the banking example, if you have spending limits or overdraft
+protections set, any attempts to cross those limits should fail.</li>
+<li><strong>Isolation</strong>: Isolation guarantees that transactions executed concurrently
+should produce an end state as if the transactions were executed sequentially.
+If a user had $100 in the bank and tried to withdraw $10 at the same time, the
+remaining balance should read
+$80. If isolation guarantees are broken, the database may return $90 as the
+balance.</li>
+<li><strong>Durability</strong>: Durability means that once a transaction is committed, those
+changes become permanent. For our banking example, an ATM should return the
+same balance even after a power outage.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_vlJa" id="relational-databases-vs-non-relational-databases">Relational databases vs. non-relational databases<a href="#relational-databases-vs-non-relational-databases" class="hash-link" aria-label="Direct link to Relational databases vs. non-relational databases" title="Direct link to Relational databases vs. non-relational databases">​</a></h2>
+<p>The table below compares the traits of relational and
+<a href="/glossary/non-relational-database/">non-relational databases</a>:</p>
+<table><thead><tr><th></th><th>Relational Databases</th><th>Non-relational Databases</th></tr></thead><tbody><tr><td>Data Model</td><td>Relational</td><td>Key-value, document, graph, search, time-series</td></tr><tr><td>Query Language</td><td>SQL</td><td>Varies, including SQL</td></tr><tr><td>Use Cases</td><td>Structured data, complex querying</td><td>Unstructured or semi-structured data, high write-throughput</td></tr><tr><td>Data Consistency</td><td>Strong consistency (ACID)</td><td>Eventual consistency</td></tr><tr><td>Examples</td><td>MySQL, PostgreSQL, SQL Server</td><td>MongoDB, Cassandra, Redis, DynamoDB</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_vlJa" id="popular-relational-databases">Popular relational databases<a href="#popular-relational-databases" class="hash-link" aria-label="Direct link to Popular relational databases" title="Direct link to Popular relational databases">​</a></h2>
+<ul>
+<li><a href="https://www.mysql.com" target="_blank" rel="noopener noreferrer">MySQL</a></li>
+<li><a href="https://www.postgresql.org" target="_blank" rel="noopener noreferrer">PostgreSQL</a></li>
+<li><a href="https://www.sqlite.org/index.html" target="_blank" rel="noopener noreferrer">SQLite</a></li>
+<li><a href="https://www.microsoft.com/en-GB/sql-server/sql-server-downloads" target="_blank" rel="noopener noreferrer">Microsoft SQL Server</a></li>
+<li><a href="https://www.oracle.com/" target="_blank" rel="noopener noreferrer">Oracle</a></li>
+<li><a href="https://mariadb.org/" target="_blank" rel="noopener noreferrer">MariaDB</a></li>
+<li><a href="https://aws.amazon.com/rds/aurora/" target="_blank" rel="noopener noreferrer">Amazon Aurora</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_vlJa" id="additional-resources">Additional resources<a href="#additional-resources" class="hash-link" aria-label="Direct link to Additional resources" title="Direct link to Additional resources">​</a></h2>
+<p><a href="https://itnext.io/migrating-from-relational-databases-to-time-series-databases-9f059a3e34cb" target="_blank" rel="noopener noreferrer">Migrating from Relational Databases to Time-series Databases</a></p></article></div><div class="col col--2"><div class="tableOfContents_SQBu thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#relational-model" class="table-of-contents__link toc-highlight">Relational model</a></li><li><a href="#relational-model-operations" class="table-of-contents__link toc-highlight">Relational model operations</a></li><li><a href="#characteristics-of-relational-databases" class="table-of-contents__link toc-highlight">Characteristics of relational databases</a></li><li><a href="#relational-databases-vs-non-relational-databases" class="table-of-contents__link toc-highlight">Relational databases vs. non-relational databases</a></li><li><a href="#popular-relational-databases" class="table-of-contents__link toc-highlight">Popular relational databases</a></li><li><a href="#additional-resources" class="table-of-contents__link toc-highlight">Additional resources</a></li></ul></div></div></div></main></div><footer class="root_ngte"><div class="content_b0RB center_TCcL"><img alt="Datastrato logo" class="logo_cbK_" src="/img/logo/datastrato-white.png" title="Datastrato - The Data and AI Fabric." width="136" height="27" loading="lazy"><div class="tagline_AtlP"><p class="taglineText_tQro">Datastrato is next-gen data and AI platform. Unify all your data, analytics and AI in one place.</p><div class="subscribe_iskb"><p class="subscribeText_dtOf">Subscribe to our newsletter.</p><form class="root_TMiE" id="subscribe-form" action="https://formspree.io/f/xknlywkn" method="POST"><div><div class="inputs_rkuD subscribeInputs_aK7n"><input class="input_unID input_T5MP" name="email" required="" pattern="^[a-zA-Z0-9.!#$%&amp;&#x27;*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$" placeholder="Email address" title="Email address should be valid" type="email"><button class="subscribeSubmit_NZ8i button_IrwC button--tertiary_aAKs button--uppercase_sKn8" type="submit">Subscribe</button></div></div></form></div><a class="githubButton_HWRz button_IrwC button--icon__kNL button--secondary_vsLV button--xsmall_qg4O" href="https://github.com/datastrato" rel="noopener noreferrer" target="_blank"><img alt="GitHub logo" height="22" src="/img/github.svg" title="GitHub" width="22">Star us on GitHub</a></div><div class="links_AXCu"><div class="category_BGH9"><span class="title_EnA9">Product</span><ul class="items_ELRc"><li><a href="https://github.com/datastrato/" target="_blank" rel="noopener noreferrer" class="text-gray-50">Open Source</a></li></ul></div><div class="category_BGH9"><span class="title_EnA9">Learn</span><ul class="items_ELRc"><li><a href="https://gravitino.discourse.group" target="_blank" rel="noopener noreferrer" class="text-gray-50">Discourse Community</a></li></ul></div><div class="category_BGH9"><span class="title_EnA9">Social</span><ul class="items_ELRc"><li><a href="https://twitter.com/datastrato" target="_blank" rel="noopener noreferrer" class="text-gray-50">Twitter</a></li><li><a href="https://github.com/datastrato" target="_blank" rel="noopener noreferrer" class="text-gray-50">GitHub</a></li><li><a href="https://www.linkedin.com/company/datastrato/" target="_blank" rel="noopener noreferrer" class="text-gray-50">Linkedin</a></li><li><a href="https://www.youtube.com/@datastrato" target="_blank" rel="noopener noreferrer" class="text-gray-50">YouTube</a></li></ul></div><div class="category_BGH9"><span class="title_EnA9">Company</span><ul class="items_ELRc"><li><a class="text-gray-50" href="/about-us/">About us</a></li><li><a class="text-gray-50" href="/careers/">Careers</a></li></ul></div></div></div><div class="border_ztXQ"><div class="bottom_Vxi5">Copyright © 2023 Datastrato<a class="link_xUn9" href="#">Privacy</a><a class="link_xUn9" href="#">Terms</a></div></div></footer></div>
+</body>
+</html>

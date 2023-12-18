@@ -1,0 +1,1 @@
+(self.webpackChunkdatastrato_next=self.webpackChunkdatastrato_next||[]).push([[1893],{47076:()=>{},3058:()=>{},7091:()=>{},69027:()=>{},93452:()=>{},15325:()=>{},22810:()=>{}}]);

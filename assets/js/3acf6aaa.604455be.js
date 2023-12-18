@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdatastrato_next=self.webpackChunkdatastrato_next||[]).push([[7667],{99815:a=>{a.exports=JSON.parse('{"label":"company","permalink":"/blog/tags/company","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);
