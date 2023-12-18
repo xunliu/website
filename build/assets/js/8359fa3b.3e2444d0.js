@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdatastrato_next=self.webpackChunkdatastrato_next||[]).push([[3741],{61040:t=>{t.exports=JSON.parse('{"permalink":"/blog/tags/data-silos","page":1,"postsPerPage":1000,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

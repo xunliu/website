@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="career mdx-page plugin-pages plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.1">
+<title data-rh="true">What Is Change Data Capture (CDC)? | Datastrato</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://datastrato.ai/img/datastrato-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://datastrato.ai/img/datastrato-social-card.jpg"><meta data-rh="true" property="og:url" content="https://datastrato.ai/glossary/change-data-capture"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="What Is Change Data Capture (CDC)? | Datastrato"><meta data-rh="true" name="description" content="Change data capture (CDC) is a data integration technique used to track changes"><meta data-rh="true" property="og:description" content="Change data capture (CDC) is a data integration technique used to track changes"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://datastrato.ai/glossary/change-data-capture"><link data-rh="true" rel="alternate" href="https://datastrato.ai/glossary/change-data-capture" hreflang="en"><link data-rh="true" rel="alternate" href="https://datastrato.ai/glossary/change-data-capture" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Datastrato RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Datastrato Atom Feed">
+<link rel="alternate" type="application/json" href="/blog/feed.json" title="Datastrato JSON Feed"><link rel="stylesheet" href="/assets/css/styles.a88aeb98.css">
+<script src="/assets/js/runtime~main.3a6037d7.js" defer="defer"></script>
+<script src="/assets/js/main.f2e8b9f2.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_j2j9" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar_WxW1 navbar navbar--fixed-top"><div class="navbar__inner inner_Mh1Q"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo/datastrato-black.png" alt="Logo" class="themedComponent_TzN7 themedComponent--light_mIzh"><img src="/img/logo/datastrato-white.png" alt="Logo" class="themedComponent_TzN7 themedComponent--dark_b7oL"></div><b class="navbar__title text--truncate"> </b></a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Products</a><ul class="dropdown__menu"><li>
+<div class="w-screen max-w-md flex-auto overflow-hidden bg-white dark:bg-[#21222b] text-sm leading-6">
+  <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50 dark:hover:bg-[#293054]">
+    <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+      <image src="/img/logo/gravitino.svg" class="w-6 h-6">
+    </div>
+  <div>
+    <a href="/gravitino" class="text-lg font-semibold text-gray-900 dark:text-white">
+      Gravitino
+      <span class="absolute inset-0"></span>
+    </a>
+    <p class="mt-1 mb-0 text-gray-600 dark:text-gray-300">A high-performance, geo-distributed and federated metadata lake</p>
+  </div>
+</div>
+</div></li></ul></div><a class="navbar__item navbar__link" href="/blog">Blog</a><a class="navbar__item navbar__link" href="/docs/0.3.0/">Documentation</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/datastrato/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link header-github-link" aria-label="GitHub repository">Star us<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_v3ID"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_mQQv colorModeToggle_x44X"><button class="clean-btn toggleButton_ichq toggleButtonDisabled_iobG" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_F93k"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_edoM"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_dCNk"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_eExm"><main class="container container--fluid margin-vert--lg"><div class="row mdxPageWrapper_yHAa"><div class="col col--8"><article><h1>What Is Change Data Capture (CDC)?</h1>
+<p>Change data capture (CDC) is a data integration technique used to track changes
+to a data source and deliver those changes to destination systems in real time.</p>
+<p>Most commonly, change data capture is used to monitor changes to a source
+database and propagate those changes to a database, data warehouse, data lake,
+or event streaming platform.</p>
+<p>CDC is useful in situations where data consistency across various systems is
+important. For example, change data capture systems are heavily utilized for
+data replication, data migration, and data processing pipelines. Because CDC
+systems track changes in real time, it preserves data integrity across systems
+better than solutions that use batch processing.</p>
+<figure><img alt="High level diagram of how CDC is used in a system in relation to source database, a message systems, and the target systems" class="image_yt7U margin_cHYA shadow_K2GZ title_SOBy" height="342" src="/img/glossary/change-data-capture/dataflow.webp" width="770" loading="lazy"><figcaption class="caption_iPQj">CDC dataflow</figcaption></figure>
+<h2 class="anchor anchorWithStickyNavbar_vlJa" id="use-cases-and-benefits">Use cases and benefits<a href="#use-cases-and-benefits" class="hash-link" aria-label="Direct link to Use cases and benefits" title="Direct link to Use cases and benefits">​</a></h2>
+<p>Unlike batch processing systems that rely on periodic bulk uploads, CDC system’s
+ability to track changes and sync data in real-time unlocks several use cases:</p>
+<ul>
+<li><strong>Real-time data integration</strong>: CDC enables near real-time synchronization of
+data that can be used for data replication to scale workloads (e.g., adding
+data replicas) or to increase system availability (e.g., cross-region
+replication).</li>
+<li><strong>Zero-downtime migration</strong>: CDC can support zero-downtime migration between
+databases, whether it involves moving data from on-prem service to the cloud
+or from legacy systems to new database versions. CDC can continuously
+synchronize data during the migration without having to take snapshots or
+restart the database during upgrades.</li>
+<li><strong>Real-time analytics</strong>: CDC is often an integral part of a stream processing
+pipeline as it can propagate data to multiple destination systems in
+real-time. The changes in data can then be analyzed in real time for anomaly
+detection or forecasting models.</li>
+<li><strong>Reliable data exchange</strong>: When there is a need to broadcast an update to
+multiple data stores (e.g., updating a record in a database and also sending
+it to a messaging system), sending those requests independently can lead to
+data inconsistencies when one of the systems encounters a failure. CDC
+prevents this
+“<a href="https://debezium.io/blog/2019/02/19/reliable-microservices-data-exchange-with-the-outbox-pattern/" target="_blank" rel="noopener noreferrer">dual-write</a>”
+issue by enabling the
+<a href="https://microservices.io/patterns/data/transactional-outbox.html" target="_blank" rel="noopener noreferrer">transactional outbox pattern</a>
+to trigger updates once writes to one data store have been completed.</li>
+<li><strong>Auditing</strong>: Since CDC captures database actions (e.g., insert, update,
+delete), it has a built-in record of data changes. This can be useful for
+creating auditing reports for compliance or security purposes.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_vlJa" id="cdc-methods">CDC methods<a href="#cdc-methods" class="hash-link" aria-label="Direct link to CDC methods" title="Direct link to CDC methods">​</a></h2>
+<p>Underneath the hood, CDC systems implement different strategies
+to track and capture changes:</p>
+<ul>
+<li>
+<p><strong>Audit-column-based</strong>: CDC system can monitor an audit column (usually a
+timestamped field such as <code>Last Updated Time</code> or <code>Modified Timestamp</code>) to
+retrieve rows that have been added or updated since the last processing time.
+This is a simple system to implement, but cannot handle hard delete
+operations.</p>
+</li>
+<li>
+<p><strong>Trigger-based</strong>: Most databases support a trigger function where a stored
+procedure will automatically run when a data manipulation event (e.g., insert,
+update, or delete) occurs. Using a trigger-based system could simplify the CDC
+architecture as trigger functions are natively built into the database.
+However, trigger functions often incur a performance cost and can lead to a
+management burden as the data format changes.</p>
+</li>
+<li>
+<p><strong>Log-based</strong>: The most popular approach to implementing CDC inspects
+transaction logs that databases utilize for crash recovery or replication
+means. By parsing these logs, CDC systems can relay these changes to
+downstream systems. The primary benefit of using a log-based system is that it
+does not add computational overhead to the source database. It can record all
+database changes including schema updates from the application, by decoding
+the logs. However, decoding the transaction log may be complex and requires
+additional system components outside the database.</p>
+<figure><img alt="Log-based CDC system: Diagram of how data manipulation is captured to a log and then used to update the table" class="image_yt7U margin_cHYA shadow_K2GZ title_SOBy" height="342" src="/img/glossary/change-data-capture/log-based.webp" width="770" loading="lazy"><figcaption class="caption_iPQj">Log-based CDC is the most popular CDC method</figcaption></figure>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_vlJa" id="popular-tools-for-cdc">Popular tools for CDC<a href="#popular-tools-for-cdc" class="hash-link" aria-label="Direct link to Popular tools for CDC" title="Direct link to Popular tools for CDC">​</a></h2>
+<p>There are many change data capture solutions, ranging from open source to commercial services:</p>
+<ul>
+<li>Open-source:<!-- -->
+<ul>
+<li><a href="https://github.com/debezium" target="_blank" rel="noopener noreferrer">Debezium</a></li>
+<li><a href="https://github.com/apache/nifi" target="_blank" rel="noopener noreferrer">Apache Nifi</a></li>
+</ul>
+</li>
+<li>Open-source with managed offerings:<!-- -->
+<ul>
+<li><a href="https://github.com/estuary/flow" target="_blank" rel="noopener noreferrer">Estuary Flow</a></li>
+<li><a href="https://www.confluent.io/confluent-cloud/" target="_blank" rel="noopener noreferrer">Confluent Cloud</a></li>
+<li><a href="https://github.com/MaterializeInc/materialize" target="_blank" rel="noopener noreferrer">Materialized</a></li>
+</ul>
+</li>
+<li>Commercial:<!-- -->
+<ul>
+<li><a href="https://www.striim.com" target="_blank" rel="noopener noreferrer">Striim</a></li>
+<li><a href="https://streamkap.com" target="_blank" rel="noopener noreferrer">StreamKap</a></li>
+<li><a href="https://streamsets.com" target="_blank" rel="noopener noreferrer">StreamSets</a></li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_vlJa" id="additional-resources">Additional resources<a href="#additional-resources" class="hash-link" aria-label="Direct link to Additional resources" title="Direct link to Additional resources">​</a></h2>
+<ul>
+<li><a href="/blog/2023/01/03/change-data-capture-with-questdb-and-debezium/">Change Data Capture with Datastrato and Debezium</a></li>
+<li><a href="/docs/third-party-tools/kafka/questdb-kafka/">Datastrato Kafka connector</a></li>
+</ul></article></div><div class="col col--2"><div class="tableOfContents_SQBu thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#use-cases-and-benefits" class="table-of-contents__link toc-highlight">Use cases and benefits</a></li><li><a href="#cdc-methods" class="table-of-contents__link toc-highlight">CDC methods</a></li><li><a href="#popular-tools-for-cdc" class="table-of-contents__link toc-highlight">Popular tools for CDC</a></li><li><a href="#additional-resources" class="table-of-contents__link toc-highlight">Additional resources</a></li></ul></div></div></div></main></div><footer class="root_ngte"><div class="content_b0RB center_TCcL"><img alt="Datastrato logo" class="logo_cbK_" src="/img/logo/datastrato-white.png" title="Datastrato - The Data and AI Fabric." width="136" height="27" loading="lazy"><div class="tagline_AtlP"><p class="taglineText_tQro">Datastrato is next-gen data and AI platform. Unify all your data, analytics and AI in one place.</p><div class="subscribe_iskb"><p class="subscribeText_dtOf">Subscribe to our newsletter.</p><form class="root_TMiE" id="subscribe-form" action="https://formspree.io/f/xknlywkn" method="POST"><div><div class="inputs_rkuD subscribeInputs_aK7n"><input class="input_unID input_T5MP" name="email" required="" pattern="^[a-zA-Z0-9.!#$%&amp;&#x27;*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$" placeholder="Email address" title="Email address should be valid" type="email"><button class="subscribeSubmit_NZ8i button_IrwC button--tertiary_aAKs button--uppercase_sKn8" type="submit">Subscribe</button></div></div></form></div><a class="githubButton_HWRz button_IrwC button--icon__kNL button--secondary_vsLV button--xsmall_qg4O" href="https://github.com/datastrato" rel="noopener noreferrer" target="_blank"><img alt="GitHub logo" height="22" src="/img/github.svg" title="GitHub" width="22">Star us on GitHub</a></div><div class="links_AXCu"><div class="category_BGH9"><span class="title_EnA9">Product</span><ul class="items_ELRc"><li><a href="https://github.com/datastrato/" target="_blank" rel="noopener noreferrer" class="text-gray-50">Open Source</a></li></ul></div><div class="category_BGH9"><span class="title_EnA9">Learn</span><ul class="items_ELRc"><li><a href="https://gravitino.discourse.group" target="_blank" rel="noopener noreferrer" class="text-gray-50">Discourse Community</a></li></ul></div><div class="category_BGH9"><span class="title_EnA9">Social</span><ul class="items_ELRc"><li><a href="https://twitter.com/datastrato" target="_blank" rel="noopener noreferrer" class="text-gray-50">Twitter</a></li><li><a href="https://github.com/datastrato" target="_blank" rel="noopener noreferrer" class="text-gray-50">GitHub</a></li><li><a href="https://www.linkedin.com/company/datastrato/" target="_blank" rel="noopener noreferrer" class="text-gray-50">Linkedin</a></li><li><a href="https://www.youtube.com/@datastrato" target="_blank" rel="noopener noreferrer" class="text-gray-50">YouTube</a></li></ul></div><div class="category_BGH9"><span class="title_EnA9">Company</span><ul class="items_ELRc"><li><a class="text-gray-50" href="/about-us/">About us</a></li><li><a class="text-gray-50" href="/careers/">Careers</a></li></ul></div></div></div><div class="border_ztXQ"><div class="bottom_Vxi5">Copyright © 2023 Datastrato<a class="link_xUn9" href="#">Privacy</a><a class="link_xUn9" href="#">Terms</a></div></div></footer></div>
+</body>
+</html>

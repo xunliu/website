@@ -1,0 +1,24 @@
+[[redirects]]
+  from = "/docs/"
+  to = "/docs/0.3.0"
+  status = 301
+
+[[redirects]]
+  from = "/docs/next"
+  to = "/docs/0.3.0"
+  status = 301
+
+[[redirects]]
+  from = "/blog/datatstrato-origin-story"
+  to = "/blog/datastrato-origin-story"
+  status = 301
+
+[[redirects]]
+  from = "/blog/2023/12/01/datastrato"
+  to = "/blog/datastrato-origin-story"
+  status = 301
+
+[[redirects]]
+  from = "/blog/gravitino-unified-metdata-lake"
+  to = "/blog/gravitino-unified-metadata-lake"
+  status = 301

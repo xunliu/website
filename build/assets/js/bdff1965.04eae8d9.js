@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdatastrato_next=self.webpackChunkdatastrato_next||[]).push([[2307],{16948:t=>{t.exports=JSON.parse('{"permalink":"/blog/tags/open-source","page":1,"postsPerPage":1000,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdatastrato_next=self.webpackChunkdatastrato_next||[]).push([[2260],{99438:e=>{e.exports=JSON.parse('{"label":"engineering","permalink":"/blog/tags/engineering","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
